@@ -1,0 +1,12 @@
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\bin\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.deps.json
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\bin\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.dll
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\bin\Debug\net5.0\ref\Hahn.ApplicatonProcess.February2021.Data.dll
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\bin\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.pdb
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.csprojAssemblyReference.cache
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.AssemblyInfoInputs.cache
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.AssemblyInfo.cs
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.csproj.CoreCompileInputs.cache
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.dll
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\ref\Hahn.ApplicatonProcess.February2021.Data.dll
+D:\Proyects\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.February2021.Data\obj\Debug\net5.0\Hahn.ApplicatonProcess.February2021.Data.pdb
