@@ -1,4 +1,5 @@
 ﻿using Hahn.ApplicatonProcess.February2021.Domain.Models;
+using Hahn.ApplicatonProcess.February2021.Domain.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,10 @@ namespace Hahn.ApplicatonProcess.February2021.Domain.Interfaces
 {
     public interface IAssetService
     {
-        IEnumerable<Asset> ListAll();
-        Asset GetById(int Id);
+        IEnumerable<AssetViewModel> ListAll();
+        AssetViewModel GetById(int Id);
+        AssetViewModel Create(AssetViewModel model);
+        AssetViewModel Update(AssetViewModel model);
+        void Delete(int Id);
     }
 }

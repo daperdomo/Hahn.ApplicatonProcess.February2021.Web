@@ -1,6 +1,8 @@
-﻿using Hahn.ApplicatonProcess.February2021.Data.Interfaces;
+﻿using AutoMapper;
+using Hahn.ApplicatonProcess.February2021.Data.Interfaces;
 using Hahn.ApplicatonProcess.February2021.Domain.Interfaces;
 using Hahn.ApplicatonProcess.February2021.Domain.Models;
+using Hahn.ApplicatonProcess.February2021.Domain.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,19 +14,47 @@ namespace Hahn.ApplicatonProcess.February2021.Domain.Services
     public class AssetService : IAssetService
     {
         private readonly IRepository<Asset> _repository;
-        public AssetService(IRepository<Asset> repository)
+        private readonly IMapper _mapper;
+
+        public AssetService(IRepository<Asset> repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
-        public Asset GetById(int Id)
+        public AssetViewModel Create(AssetViewModel model)
         {
-            return _repository.GetById(Id);
+            var entity = _mapper.Map<Asset>(model);
+            _repository.Create(entity);
+            _repository.SaveChanges();
+            return _mapper.Map<AssetViewModel>(entity);
         }
 
-        public IEnumerable<Asset> ListAll()
+        public AssetViewModel GetById(int Id)
         {
-            return _repository.ListAll();
+            return _mapper.Map<AssetViewModel>(_repository.GetById(Id));
+        }
+
+        public IEnumerable<AssetViewModel> ListAll()
+        {
+            return _repository
+                .ListAll().
+                Select(m => _mapper.Map<AssetViewModel>(m));
+        }
+
+        public AssetViewModel Update(AssetViewModel model)
+        {
+            var entity = _mapper.Map<Asset>(model);
+            _repository.Update(entity);
+            _repository.SaveChanges();
+            return _mapper.Map<AssetViewModel>(entity);
+        }
+
+        public void Delete(int Id)
+        {
+            var entity = _repository.GetById(Id);
+            _repository.Delete(entity);
+            _repository.SaveChanges();
         }
     }
 }
