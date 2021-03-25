@@ -1,0 +1,44 @@
+[
+  {
+    "Key": "asset.assetname.empty",
+    "LocalizedValue": {
+      "en-US": "Asset name should not be empty"
+    }
+  },
+  {
+    "Key": "asset.assetname.minlength",
+    "LocalizedValue": {
+      "en-US": "Name should have at least 10 chars"
+    }
+  },
+  {
+    "Key": "asset.department.empty",
+    "LocalizedValue": {
+      "en-US": "You must select a department"
+    }
+  },
+  {
+    "Key": "asset.countryofdepartment.empty",
+    "LocalizedValue": {
+      "en-US": "Country of department should not be empty"
+    }
+  },
+  {
+    "Key": "asset.emailadressofdepartment.empty",
+    "LocalizedValue": {
+      "en-US": "Email address of department should not be empty."
+    }
+  },
+  {
+    "Key": "asset.emailadressofdepartment.valid",
+    "LocalizedValue": {
+      "en-US": "Email address of department must be a valid email."
+    }
+  },
+  {
+    "Key": "asset.purchasedate.olderthanayear",
+    "LocalizedValue": {
+      "en-US": "Must not be older than one year"
+    }
+  }
+]
