@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Hahn.ApplicatonProcess.February2021.Domain.Enums;
 using Hahn.ApplicatonProcess.February2021.Domain.Models;
 using Hahn.ApplicatonProcess.February2021.Domain.ViewModel;
 using System;
@@ -13,7 +14,11 @@ namespace Hahn.ApplicatonProcess.February2021.Domain.Infrastructure
     {
         public MappingProfile()
         {
-            CreateMap<Asset, AssetViewModel>().ReverseMap();
+            CreateMap<AssetViewModel, Asset>().ForMember(destination => destination.Department,
+                 opt => opt.MapFrom(source => (Department)source.Department));
+
+            CreateMap<Asset, AssetViewModel>().ForMember(destination => destination.Department,
+                opt => opt.MapFrom(source => (byte)source.Department));
         }
     }
 }

@@ -20,8 +20,10 @@ namespace Hahn.ApplicatonProcess.February2021.Domain.Validators
             RuleFor(m => m.AssetName).NotEmpty().WithMessage(stringLocalizer["asset.assetname.empty"])
                 .MinimumLength(10).WithMessage(stringLocalizer["asset.assetname.minlength"]);
 
+            RuleFor(m => m.CountryOfDepartment).NotEmpty().WithMessage(stringLocalizer["asset.countryofdepartment.empty"]);
+
             RuleFor(m => m.CountryOfDepartment).Must(country => countryService.ExistsCountry(country))
-                .WithMessage(stringLocalizer["asset.countryofdepartment.empty"]);
+                .WithMessage(stringLocalizer["asset.countryofdepartment.valid"]);
 
             RuleFor(m => m.PurchaseDate).Must(purchaseDate => objectHelper.IsNotOlderThanOneYear(purchaseDate))
                 .WithMessage(stringLocalizer["asset.purchasedate.olderthanayear"]);

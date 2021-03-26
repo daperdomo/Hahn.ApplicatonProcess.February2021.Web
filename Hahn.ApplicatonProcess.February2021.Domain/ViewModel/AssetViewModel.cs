@@ -9,7 +9,7 @@ namespace Hahn.ApplicatonProcess.February2021.Domain.ViewModel
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string AssetName { get; set; }
-        public Department? Department { get; set; }
+        public byte? Department { get; set; }
         public string CountryOfDepartment { get; set; }
         public string EMailAdressOfDepartment { get; set; }
         public DateTime? PurchaseDate { get; set; }
