@@ -24,6 +24,12 @@
     }
   },
   {
+    "Key": "asset.countryofdepartment.valid",
+    "LocalizedValue": {
+      "en-US": "Country of department should be valid"
+    }
+  },
+  {
     "Key": "asset.emailadressofdepartment.empty",
     "LocalizedValue": {
       "en-US": "Email address of department should not be empty."
