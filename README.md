@@ -8,7 +8,7 @@ This project was created for an evaluation test for Hahn Softwareentwicklung, I 
 
 2. Install nuget packages: Install-Package
 
-3. In project **Hahn.ApplicatonProcess.February2021**, navigate to ClientApp folder and run npm install
+3. In project **Hahn.ApplicatonProcess.February2021.Web**, navigate to ClientApp folder and run npm install
 
 Now you can start the app (you can run as a Docker image)
 
